@@ -1,0 +1,146 @@
+body{
+  margin: 0;
+  padding: 10px;
+  background-color: #303030;
+  color: #fff;
+  font-size: 22px;
+}
+header{
+  height: 10%;
+  background-color: #CB01FF;
+  padding: 10px;
+}
+h1{
+  text-align: center;
+  font-size: 30px;
+  margin: 10px auto;
+  color: #fff;
+}
+
+.content{
+  width: 100%;
+  height: 85%;
+  display: flex;
+}
+
+.text{
+  width: 55%;
+  height: 100%;
+  text-align: center;
+  padding: 10px 0 10px 10px;
+  /*position: absolute;*/
+}
+.description{
+  position: absolute;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 3px solid #ffffff;
+  width: 55%;
+  margin-bottom: 10px;
+}
+
+.map{
+  width: 45%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+svg{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-top: 5px;
+}
+
+path{
+  opacity: 0.1;
+}
+path:hover{
+  opacity: 1;
+  transition: opacity .2s ease;
+  cursor: pointer;
+}
+
+.imgmap{
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 10px;
+}
+
+.contianer{
+  display: flex;
+  flex-direction: column;
+}
+.img_and_text{
+  display: flex;
+}
+.float{
+  width: auto;
+  height: 250px;
+  text-align: center;
+  margin: auto;
+}
+.baza_inf{
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+}
+.all_inf{
+  font-size: 20px;
+  margin-top: 20px;
+  text-align:justify;
+}
+h2{
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+/*.butt{
+  background-color: #fff;
+  border: 2px solid #CB01FF;
+  color: #303030;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}*/
+
+@media screen and (max-width: 1129px) {
+  .content{
+    flex-wrap: wrap-reverse;
+  }
+  .text{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .map{
+    width: 100%;
+  }
+  .description{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .description{
+    display: flex;
+  }
+  .img_and_text{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .float{
+
+  }
+  .baza_inf{
+    width: 100%;
+  }
+}
